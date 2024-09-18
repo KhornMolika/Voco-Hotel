@@ -57,8 +57,9 @@ main {
 }
 .star {
   font-size: 14px;
-  color: var(--primary-color-2);
-  margin-right: 3px;
+  color: white;
+  margin-right: 2px;
+  margin-bottom: 1px;
 }
 .best {
   font-size: 70px;
