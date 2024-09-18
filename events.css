@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+
+:root {
+  --primary-color-1: #fb923c;
+  --primary-color-2: #f97316;
+  --secondary-color: #eff6ff;
+  --text-dark: #0f172a;
+  --text-light: #94a3b8;
+  --white: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+  color: #000;
+}
+/* Hero Section */
+.hero {
+  background-image: url("images/home/hero-image.avif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: auto;
+  background-attachment: fixed;
+  height: 100vh;
+}
+.hero-bg {
+  background-color: #00000070;
+  height: 100%;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  height: 100vh; /* Set height to the full viewport to center vertically */
+  color: rgb(247, 240, 240);
+  position: relative;
+  text-align: center;
+}
+.event {
+  font-size: 80px;
+  color: var(--white);
+  margin-bottom: 20px;
+}
+.home {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 600;
+}
+.home a {
+  text-decoration: none;
+  color: var(--primary-color-1);
+  font-weight: 400;
+}
+.home span {
+  margin: 0 10px;
+}
+
+/* Section 7 */
+.s2 {
+  padding: 100px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  background-color: var(--secondary-color);
+}
+.s2-card-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 40px;
+  width: 100%;
+  height: auto;
+}
+.s2-card {
+  text-align: start;
+  width: 340px;
+  height: 390px;
+  background-color: var(--white);
+}
+.s2-card img {
+  width: 340px;
+  height: 230px;
+}
+.s2-card h3 {
+  margin: 10px;
+  padding-left: 10px;
+  cursor: pointer;
+}
+.s2-card h3:hover {
+  margin: 10px;
+  padding-left: 10px;
+  color: var(--primary-color-1);
+  cursor: pointer;
+}
+.s2-card p {
+  color: var(--light-black);
+  font-size: 16px;
+  padding-left: 10px;
+  margin: 10px;
+  font-family: "Times New Roman", Times, serif;
+}
+.s2-card .date {
+  color: var(--text-light);
+  font-size: 14px;
+  padding-left: 10px;
+  margin: 10px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.s2-btn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.yello-btn{
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--primary-color-1);
+    color: var(--white);
+    text-align: center;
+    font-size: 18px;
+}
+.white-btn{
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--white);
+    color: var(--primary-color-1);
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
+}
+.white-btn:hover {
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.384);
+}
+.s2-dots{
+    font-size: 24px;
+    border: none;
+    color: var(--text-light);
+    background-color: var(--secondary-color);
+}
+
+/* Section 8 A Best Place To Stay. Reserve Now! */
+.s3 {
+    background-image: url("images/home/hero-image.avif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: auto;
+    background-attachment: fixed;
+    height: 300px;
+  }
+  .s3-image-bg {
+    background-color: #00000067;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+    color: var(--white);
+    height: 100%;
+  }
+  .s3-image-bg h2 {
+    font-size: 34px;
+  }
+  .s3-image-bg button {
+    font-size: 18px;
+    color: var(--white);
+    padding: 15px 40px;
+    background-color: transparent;
+    border: solid;
+    border-color: var(--white);
+    border-width: 2px;
+    border-radius: 50px;
+  }
+  .s3-image-bg button:hover {
+    font-size: 18px;
+    color: var(--white);
+    background-color: var(--primary-color-1);
+    padding: 15px 40px;
+    border: solid;
+    border-color: var(--primary-color-1);
+    border-width: 2px;
+    border-radius: 50px;
+  }
+  .s3-image-bg a {
+    text-decoration: none;
+    color: var(--white);
+  }
+
+
+/* Breakpoint max-width 1024 */
+
+@media only screen and (max-width: 1024px) {
+    .s2-card-container {
+        flex-direction: column;
+      }
+      .s2-card {
+        width: 90%;
+        height: auto;
+      }
+      .s2-card > img {
+        width: 100%;
+        object-fit: cover;
+      }
+      .s3-image-bg {
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+      }
+      .s3-image-bg h2 {
+        text-align: center;
+      }
+}
+
+@media only screen and (max-width: 768px) {
+.event {
+    font-size: 60px;
+}
+}

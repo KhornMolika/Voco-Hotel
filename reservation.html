@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reservation.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>Voco Hotel</title>
+  </head>
+  <body>
+    <header><section id="navbarRender"></section></header>
+    <main>
+      <!-- Hero Section A Best Place To Stay -->
+      <section class="hero">
+        <div class="hero-bg">
+          <div class="hero-content">
+            <h1 class="reservation">Reservation</h1>
+            <div class="home">
+              <a href="home.html">Home</a>
+              <span>/</span>
+              <p>RESERVATION</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section 2 Reservation Form -->
+      <section class="s2">
+        <div
+          class="s2-form-container"
+          data-aos="fade-right"
+          data-aos-duration="600"
+        >
+          <form action="/action_page.php">
+            <div class="name-phone">
+              <div class="name">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" />
+              </div>
+
+              <div class="phone">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" />
+              </div>
+            </div>
+
+            <div class="email">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" />
+            </div>
+
+            <div class="name-phone">
+              <div class="name">
+                <label for="checkin-date">Name</label>
+                <input type="date" id="checkin-date" name="checkin-date" />
+              </div>
+
+              <div class="phone">
+                <label for="checkout-date">Phone</label>
+                <input type="date" id="checkout-date" name="checkout-date" />
+              </div>
+            </div>
+            <!--  -->
+            <div class="name-phone">
+              <div class="name">
+                <label for="adult">Adults</label>
+                <select name="adult" id="adult">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4+">4+</option>
+                </select>
+              </div>
+
+              <div class="phone">
+                <label for="children">Children</label>
+                <select name="children" id="children">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4+">4+</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="message">
+              <label for="subject">Write Message</label>
+              <textarea
+                id="message"
+                name="message"
+                style="height: 200px"
+              ></textarea>
+            </div>
+
+            <input class="submit-btn" type="submit" value="Send Message" />
+          </form>
+        </div>
+        <div class="s2-content" data-aos="fade-left" data-aos-duration="600">
+          <h3>ADDRESS:</h3>
+          <p>98 West 21th Street, Suite 721 New York NY 10016</p>
+          <h3>PHONE:</h3>
+          <p>(+1) 234 4567 8910</p>
+          <h3>EMAIL:</h3>
+          <p>info@domain.com</p>
+        </div>
+      </section>
+      <!-- Section 3 People Says -->
+      <section class="s3">
+        <div data-aos="fade-up" data-aos-duration="600">
+          <h2>Testimonials</h2>
+          <h1>What our customers say!!</h1>
+        </div>
+        <div class="s3-section-grid" data-aos="zoom-in" data-aos-duration="600">
+          <div class="section-card">
+            <span><i class="ri-double-quotes-l"></i></span>
+            <h4>Amazing Food Experience!</h4>
+            <p>
+              The food was exquisite, and the hotel provided top-notch comfort.
+              A must-visit for anyone seeking both!
+            </p>
+            <img src="images/home/s6-person1.jpg" alt="user" />
+            <h5>Emily Thompson</h5>
+            <h6>Travel Blogger</h6>
+          </div>
+          <div class="section-card">
+            <span><i class="ri-double-quotes-l"></i></span>
+            <h4>Best Place for Food and Comfort!</h4>
+            <p>
+              The food was outstanding, and the hotel atmosphere was so cozy.
+              Truly the best place to stay and dine!
+            </p>
+            <img src="images/home/s6-person2.jpg" alt="user" />
+            <h5>Michael Rodriguez</h5>
+            <h6>Chef</h6>
+          </div>
+          <div class="section-card">
+            <span><i class="ri-double-quotes-l"></i></span>
+            <h4>Luxury Stay, Top-Notch Food!</h4>
+            <p>
+              The hotel was fantastic, but the food was even better. A perfect
+              spot for both relaxation and great meals!
+            </p>
+            <img src="images/home/s6-person3.jpg" alt="user" />
+            <h5>Sarah Collins</h5>
+            <h6>Food Critic</h6>
+          </div>
+        </div>
+      </section>
+      <!-- Section 4 A Best Place To Stay. Reserve Now! -->
+      <section class="s4">
+        <div class="s4-image-bg">
+          <h2 data-aos="fade-right" data-aos-duration="600">
+            A Best Place To Stay. Reserve Now!
+          </h2>
+          <button data-aos="fade-left" data-aos-duration="600">
+            <a href="reservation.html">Reserve Now</a>
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section id="footerRender"></section>
+    </footer>
+    <script type="module" src="./js/index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

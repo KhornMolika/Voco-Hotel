@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="rooms.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>Voco Hotel</title>
+  </head>
+  <body>
+    <header>
+      <section id="navbarRender"></section>
+    </header>
+    <main>
+      <!-- Hero Section A Best Place To Stay -->
+      <section class="hero">
+        <div class="hero-bg">
+          <div class="hero-content">
+            <h1 class="rooms">Rooms</h1>
+            <div class="home">
+              <a href="home.html">Home</a>
+              <span>/</span>
+              <p>ROOMS</p>
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="600">
+          <div class="bg-form">
+            <form>
+              <div class="form">
+                <div class="checkIO">
+                  <label for="check_in">Check In</label>
+                  <input type="date" name="check_in" class="inputCheckIO" />
+                </div>
+                <div class="checkIO">
+                  <label for="check_out">Check In</label>
+                  <input type="date" name="check_out" class="inputCheckIO" />
+                </div>
+                <div class="select">
+                  <label for="adult">Adults</label>
+                  <select name="adult" class="selectInput">
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4+</option>
+                  </select>
+                </div>
+                <div class="select">
+                  <label for="children">Children</label>
+                  <select name="children" class="selectInput">
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4+</option>
+                  </select>
+                </div>
+                <button class="button_check">Check Availalbity</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- Section 2 -->
+      <section class="s2">
+        <div
+          class="s2-card-container"
+          data-aos="zoom-in"
+          data-aos-duration="600"
+        >
+          <div class="s2-card">
+            <img src="images/home/s3-image1" alt="" class="s2-img" />
+            <h2>Single Room</h2>
+            <p>90$ / PER NIGHT</p>
+          </div>
+          <div class="s2-card">
+            <img src="images/home/s3-image2.jpg" alt="" class="s2-img" />
+            <h2>Family Room</h2>
+            <p>120$ / per night</p>
+          </div>
+          <div class="s2-card">
+            <img src="images/home/s3-image3.jpg" alt="" class="s2-img" />
+            <h2>Presidential Room</h2>
+            <p>250$ / per night</p>
+          </div>
+          <div class="s2-card">
+            <img src="images/home/s3-image1" alt="" class="s2-img" />
+            <h2>Single Room</h2>
+            <p>90$ / PER NIGHT</p>
+          </div>
+          <div class="s2-card">
+            <img src="images/home/s3-image2.jpg" alt="" class="s2-img" />
+            <h2>Family Room</h2>
+            <p>120$ / per night</p>
+          </div>
+          <div class="s2-card">
+            <img src="images/home/s3-image3.jpg" alt="" class="s2-img" />
+            <h2>Presidential Room</h2>
+            <p>250$ / per night</p>
+          </div>
+        </div>
+      </section>
+      <!-- Section 3 Great Offers -->
+      <section class="s3">
+        <div class="s3-content" data-aos="fade-down" data-aos-duration="600">
+          <h1>Great Offers</h1>
+          <p>
+            Uncover exceptional deals and exclusive offers designed to enhance
+            your stay. From special discounts to unique packages, these
+            opportunities are crafted to ensure you get the most out of your
+            experience with us. Enjoy the best of both worlds with our
+            outstanding value and unparalleled comfort.
+          </p>
+        </div>
+        <div class="card-container">
+          <div class="card-1">
+            <div
+              class="s3-card-content"
+              data-aos="fade-right"
+              data-aos-duration="600"
+            >
+              <p class="price">$199 <span>/ PER NIGHT</span></p>
+              <h5>Family Room</h5>
+              <p class="description">
+                Escape to a spacious and comfortable family room, perfect for
+                creating lasting memories. Enjoy the tranquility and luxury of
+                our accommodations, designed to provide a relaxing retreat far
+                from the everyday world.
+              </p>
+              <button>Book Now</button>
+            </div>
+            <img
+              src="images/home/s3-image2.jpg"
+              alt="image 1"
+              class="s3-image"
+              data-aos="fade-left"
+              data-aos-duration="600"
+            />
+          </div>
+          <div class="card-1">
+            <img
+              src="images/home/s3-image3.jpg"
+              alt="image 1"
+              class="s3-image"
+              data-aos="fade-right"
+              data-aos-duration="600"
+            />
+            <div
+              class="s3-card-content"
+              data-aos="fade-left"
+              data-aos-duration="600"
+            >
+              <p class="price">$299 <span>/ PER NIGHT</span></p>
+              <h5>Presidential Room</h5>
+              <p class="description">
+                Experience unparalleled luxury in our Presidential Room. With
+                elegant furnishings and stunning views, this exclusive suite
+                offers a serene escape from the ordinary. Indulge in top-tier
+                comfort and sophistication, far from the everyday world.
+              </p>
+              <button>Book Now</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section 4 A Best Place To Stay. Reserve Now! -->
+      <section class="s4">
+        <div class="s4-image-bg">
+          <h2 data-aos="fade-right" data-aos-duration="600">
+            A Best Place To Stay. Reserve Now!
+          </h2>
+          <button data-aos="fade-left" data-aos-duration="600">
+            <a href="reservation.html">Reserve Now</a>
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section id="footerRender"></section>
+    </footer>
+    <script type="module" src="./js/index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

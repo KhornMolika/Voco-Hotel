@@ -1,0 +1,403 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+
+:root {
+  --primary-color-1: #fb923c;
+  --primary-color-2: #f97316;
+  --secondary-color: #eff6ff;
+  --text-dark: #0f172a;
+  --text-light: #94a3b8;
+  --white: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+  color: #000;
+}
+/* Hero Section */
+.hero {
+  background-image: url("images/home/hero-image.avif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: auto;
+  background-attachment: fixed;
+  height: 100vh;
+}
+.hero-bg {
+  background-color: #00000070;
+  height: 100%;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  height: 100vh; /* Set height to the full viewport to center vertically */
+  color: rgb(247, 240, 240);
+  position: relative;
+  text-align: center;
+}
+.rooms {
+  font-size: 80px;
+  color: white;
+  margin-bottom: 20px;
+}
+.home {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 600;
+}
+.home a {
+  text-decoration: none;
+  color: #fb923c;
+  font-weight: 400;
+}
+.home span {
+  margin: 0 10px;
+}
+.form {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 90%;
+  margin: auto;
+}
+.bg-form {
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: 120px;
+  width: 80%;
+  z-index: 1;
+  position: relative;
+  border: none;
+  border-radius: 10px;
+  transform: translate(0, -40px);
+  box-shadow: 2px 0 30px rgb(130, 123, 123);
+}
+.checkIO {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 220px;
+}
+.select {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+}
+.inputCheckIO {
+    color: var(--text-light);
+    padding: 8px 3px 8px 3px;
+    border: 1px solid var(--text-light);
+    border-radius: 5px;
+  }
+  .inputCheckIO:focus {
+    outline: 2px solid var(--primary-color-1);
+    border: none;
+  }
+  
+  .selectInput:focus {
+    outline: 2px solid var(--primary-color-1);
+    border: none;
+  }
+  .selectInput {
+    color: var(--text-light);
+    padding: 10px 3px 10px 3px;
+    border: 1px solid var(--text-light);
+    border-radius: 5px;
+  }
+.button_check {
+  height: 38px;
+  width: 180px;
+  margin-top: 25px;
+  background-color: var(--primary-color-1);
+  font-weight: 500;
+  color: var(--white);
+  border-radius: 50px;
+  border: none;
+}
+.button_check:hover {
+  background-color: var(--primary-color-2);
+  scale: 1.05;
+}
+label {
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+/* Section 2 */
+.s2 {
+  padding: 170px 60px 60px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.s2-card-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+.s2-card {
+  text-align: center;
+}
+.s2-card h2 {
+  margin-bottom: 10px;
+}
+.s2-card p {
+  color: #f97316;
+  font-size: 16px;
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 5px;
+}
+.s2-img {
+  width: 340px;
+  height: 230px;
+}
+
+/* Section 3 Great Offers */
+.s3 {
+  padding: 0 60px 100px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #eff6ff;
+}
+.s3-content {
+  padding: 80px 210px 60px 210px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.s3-content h1 {
+  font-size: 44px;
+  margin: 0 0 20px 0;
+}
+.s3-content p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+.card-container {
+  width: 100%;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+.card-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 50%;
+}
+.s3-image {
+  width: 50%;
+  height: 100%;
+}
+.s3-card-content {
+  padding: 0 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+.price {
+  font-family: monospace;
+  font-size: 48px;
+  font-weight: 500;
+  color: #fb923c;
+  margin: 0;
+}
+.price span {
+  font-size: 18px;
+  color: #000000b2;
+}
+.s3-card-content h5 {
+  font-size: 38px;
+  font-weight: 500;
+  margin: 15px 0;
+}
+.description {
+  font-size: 16px;
+  color: #000000b2;
+  line-height: 1.6;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+.s3-card-content button {
+  padding: 10px 30px;
+  border: solid;
+  border-radius: 20px;
+  font-size: 18px;
+  color: white;
+  background-color: #fb923c;
+  cursor: pointer;
+}
+.s3-card-content button:hover {
+  padding: 10px 30px;
+  border: solid;
+  border-radius: 20px;
+  font-size: 18px;
+  color: white;
+  background-color: #f97316;
+  cursor: pointer;
+}
+
+/* Section 4 A Best Place To Stay. Reserve Now! */
+.s4 {
+  background-image: url("images/home/hero-image.avif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: auto;
+  background-attachment: fixed;
+  height: 300px;
+}
+.s4-image-bg {
+  background-color: #00000067;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 60px;
+  color: white;
+  height: 100%;
+}
+.s4-image-bg h2 {
+  font-size: 34px;
+}
+.s4-image-bg button {
+  font-size: 18px;
+  color: white;
+  padding: 15px 40px;
+  background-color: transparent;
+  border: solid;
+  border-color: white;
+  border-width: 2px;
+  border-radius: 50px;
+}
+.s4-image-bg button:hover {
+  font-size: 18px;
+  color: white;
+  background-color: #fb923c;
+  padding: 15px 40px;
+  border: solid;
+  border-color: #fb923c;
+  border-width: 2px;
+  border-radius: 50px;
+}
+.s4-image-bg a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Breakpoint of max-width 1024 */
+
+@media only screen and (max-width: 1024px) {
+  .best {
+    font-size: 50px;
+  }
+  .bg-form {
+    height: 260px;
+    width: 70%;
+    transform: translate(0, -100px);
+  }
+  .form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    column-gap: 20px;
+    width: 100%;
+  }
+  .button {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+  }
+  .button_check {
+    width: 100%;
+    margin-top: 0;
+  }
+  .inputCheckIO,
+  .selectInput {
+    width: 220px;
+  }
+  .s2 {
+    padding-top: 220px;
+    /* justify-content: space-around; */
+  }
+  .card-container {
+    height: 1400px;
+  }
+  .card-1 {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .s3-content {
+    padding: 80px 10px 60px 10px;
+    .s3-card-content {
+      align-items: center;
+    }
+    .s3-image {
+      width: 100%;
+      height: 50%;
+    }
+    .s4-image-bg {
+      flex-direction: column;
+      justify-content: center;
+      gap: 30px;
+    }
+    .s4-image-bg h2 {
+      text-align: center;
+    }
+  }
+
+  /* Breakpoint of max-width 768 */
+  @media only screen and (max-width: 768px) {
+    .rooms {
+        font-size: 60px;
+    }
+    .inputCheckIO,
+    .selectInput {
+      width: 220px !important;
+    }
+    .form {
+      display: flex !important;
+      flex-direction: column !important;
+    }
+    .bg-form {
+      height: 420px !important;
+      transform: translate(0, -150px) !important;
+    }
+    .s2 {
+      padding-top: 300px !important;
+    }
+    .best {
+      text-align: center;
+    }
+    .card-container {
+        height: 1600px !important;
+    }
+    .s3-image {
+        width: 100% !important;
+        height: 50% !important;
+    }
+  }
+}

@@ -1,0 +1,379 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+
+:root {
+  --primary-color-1: #fb923c;
+  --primary-color-2: #f97316;
+  --secondary-color: #eff6ff;
+  --text-dark: #0f172a;
+  --text-light: #94a3b8;
+  --white: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+  color: #000;
+}
+/* Hero Section */
+.hero {
+  background-image: url("images/home/hero-image.avif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: auto;
+  background-attachment: fixed;
+  height: 100vh;
+}
+.hero-bg {
+  background-color: #00000070;
+  height: 100%;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  height: 100vh; /* Set height to the full viewport to center vertically */
+  color: rgb(247, 240, 240);
+  position: relative;
+  text-align: center;
+}
+.reservation {
+  font-size: 80px;
+  color: white;
+  margin-bottom: 10px;
+}
+.home {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 600;
+}
+.home a {
+  text-decoration: none;
+  color: #fb923c;
+  font-weight: 400;
+}
+.home span {
+  margin: 0 10px;
+}
+
+/* Section 2 Contact Form */
+.s2 {
+  padding: 80px 60px 100px 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: space-between;
+  background-color: var(--whitesmoke);
+  width: 100%;
+  height: auto;
+}
+.s2-form-container {
+  width: 60%;
+  height: auto;
+  padding: 30px;
+  border: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  border-color: var(--text-light);
+}
+.s2-form-container label {
+  margin-bottom: 10px;
+}
+.s2-form-container input:focus {
+  outline: 2px solid var(--primary-color-1);
+  border: none;
+}
+
+.s2-form-container form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.name-phone {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+}
+.name,
+.phone,
+.email {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 100%;
+}
+.name input,
+.phone input,
+.email input,
+.message textarea,
+.name-phone select {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 16px;
+  border: 1.5px solid var(--text-light);
+  margin-bottom: 30px;
+  resize: none;
+}
+.message {
+  width: 100%;
+}
+.message textarea {
+  margin-top: 10px;
+  padding: 10px 0 0 10px;
+}
+.message textarea:focus {
+  outline: 2px solid var(--primary-color-1);
+  border: none;
+}
+.s2-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 37%;
+  height: auto;
+  padding: 0 30px 30px 30px;
+  color: gray;
+}
+.s2-content h3 {
+  font-size: 14px;
+  font-weight: 800;
+}
+.s2-content p {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 20px 0 20px 0;
+}
+.submit-btn {
+  margin-right: auto;
+  padding: 13px 30px;
+  border-radius: 30px;
+  border: none;
+  background: var(--primary-color-1);
+  color: white;
+  font-weight: 800;
+  text-align: center;
+}
+
+/* Section 3 People Say */
+.s3 {
+  padding: 0 60px 100px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--whitesmoke);
+  text-align: center;
+}
+.s3 h1 {
+  position: relative;
+  font-size: 44px;
+  margin: 0 0 40px 0;
+  padding-bottom: 3px;
+}
+.s3 h1::after {
+  position: absolute;
+  content: "";
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 6rem;
+  background-color: var(--primary-color-2);
+}
+.s3 h2 {
+  font-size: 24px;
+  margin: 0 0 10px 0;
+  color: var(--primary-color-1);
+}
+.s3-section-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.section-card {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding: 4rem 2rem 2rem;
+  background-color: var(--white);
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+.section-card::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  width: 65%;
+  aspect-ratio: 1;
+  border-radius: 100%;
+  background-color: var(--primary-color-1);
+  z-index: -1;
+  transition: 0.5s;
+}
+.section-card span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+  font-size: 3rem;
+  color: var(--white);
+}
+.section-card h4 {
+  margin-bottom: 1rem;
+  margin-top: 4rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary-color-1);
+  transition: 0.3s;
+}
+.section-card p {
+  margin-bottom: 2rem;
+  color: var(--text-light);
+  transition: 0.3s;
+}
+.section-card img {
+  margin-bottom: 1rem;
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 100%;
+  border: 2px solid var(--primary-color-1);
+  transition: 0.3s;
+}
+.section-card h5 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary-color-1);
+  transition: 0.3s;
+}
+.section-card h6 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--text-light);
+  transition: 0.3s;
+}
+.section-card:hover::before {
+  width: 400%;
+}
+.section-card:hover :is(h4, h5) {
+  color: var(--white);
+}
+.section-card:hover :is(p, h6) {
+  color: var(--secondary-color);
+}
+.section-card:hover img {
+  border-color: var(--white);
+}
+
+/* Section 4 A Best Place To Stay. Reserve Now! */
+.s4 {
+  background-image: url("images/home/hero-image.avif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: auto;
+  background-attachment: fixed;
+  height: 300px;
+}
+.s4-image-bg {
+  background-color: #00000067;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 60px;
+  color: white;
+  height: 100%;
+}
+.s4-image-bg h2 {
+  font-size: 34px;
+}
+.s4-image-bg button {
+  font-size: 18px;
+  color: white;
+  padding: 15px 40px;
+  background-color: transparent;
+  border: solid;
+  border-color: white;
+  border-width: 2px;
+  border-radius: 50px;
+}
+.s4-image-bg button:hover {
+  font-size: 18px;
+  color: white;
+  background-color: #fb923c;
+  padding: 15px 40px;
+  border: solid;
+  border-color: #fb923c;
+  border-width: 2px;
+  border-radius: 50px;
+}
+.s4-image-bg a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Breakpoint of 1024px */
+@media only screen and (max-width: 1024px) {
+  .section-card::before {
+    width: 30%;
+  }
+  .s3-section-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .section-card {
+    padding: 2rem;
+  }
+}
+
+/* Breakpoint of 768px */
+
+@media only screen and (max-width: 768px) {
+  .reservation {
+    font-size: 60px;
+  }
+  .s2 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .s2-content {
+    width: 100%;
+    padding: 0;
+  }
+  .s2-form-container {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .section-card::before {
+    width: 50% !important;
+  }
+  .section-card:hover::before {
+    width: 500% !important;
+  }
+  .section-card span {
+    top: 10px;
+}
+  .name-phone {
+    flex-direction: column;
+    gap: 0;
+  }
+}

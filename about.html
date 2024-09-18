@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="about.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Voco Hotel</title>
+  </head>
+  <body>
+    <header>
+      <section id="navbarRender"></section>
+    </header>
+    <main>
+      <!-- Hero Section A Best Place To Stay -->
+      <section class="hero">
+        <div class="hero-bg">
+          <div class="hero-content">
+            <h1 class="about">About Us</h1>
+            <div class="home">
+              <a href="home.html">Home</a>
+              <span>/</span>
+              <p>ABOUT</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section 2 Welcome! -->
+      <section class="s2">
+        <div class="s2-content" data-aos="fade-right" data-aos-duration="600">
+          <h1>Welcome!</h1>
+          <p>
+            Nestled in a serene corner of the world, our hotel offers a perfect
+            escape from the ordinary. Far from the hustle and bustle, we invite
+            you to unwind and experience unmatched comfort, culinary delights,
+            and breathtaking views. Whether you're here for relaxation or
+            adventure, we have something special for everyone.
+          </p>
+          <div class="learn-more">
+            <button>Learn More</button>
+            <p><span>or</span>SEE VIDEO</p>
+          </div>
+        </div>
+        <div class="s2-image-wrapper" data-aos="fade-left" data-aos-duration="600">
+          <img src="images/home/s2-image" alt="image 1" class="s2-img1" />
+          <img src="images/home/s2-image3.jpg" alt="image 2" class="s2-img2" />
+        </div>
+      </section>
+      <!-- Section 3 Leadership -->
+      <section class="s3">
+        <h1 data-aos="fade-down" data-aos-duration="600">Leadership</h1>
+        <div class="s3-card-container" data-aos="zoom-in" data-aos-duration="600">
+          <div class="container">
+            <div class="card">
+              <div class="front front-1">
+                <div>
+                  <h3>Will Peter</h3>
+                  <p>President</p>
+                </div>
+              </div>
+              <div class="back">
+                <p class="desc">
+                  “Leadership is not about being in charge. It’s about taking
+                  care of those in your charge and guiding them towards a shared
+                  vision.”
+                </p>
+                <div class="person">
+                  <img
+                    src="images/about/s3-person1.jpg"
+                    alt=""
+                    class="s3-image"
+                  />
+                  <div>
+                    <h3>Will Peter</h3>
+                    <p>President</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="card">
+              <div class="front front-2">
+                <div>
+                  <h3>Jane Williams</h3>
+                  <p>Business Manager</p>
+                </div>
+              </div>
+              <div class="back">
+                <p class="desc">
+                  “Success in business is not just about making the right
+                  decisions but also about inspiring others to reach their full
+                  potential.”
+                </p>
+                <div class="person">
+                  <img
+                    src="images/about/s3-person2.jpg"
+                    alt=""
+                    class="s3-image"
+                  />
+                  <div>
+                    <h3>Jane Williams</h3>
+                    <p>Business Manager</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="card">
+              <div class="front front-3">
+                <div>
+                  <h3>Jeffrey Neddery</h3>
+                  <p>Marketing Director</p>
+                </div>
+              </div>
+              <div class="back">
+                <p class="desc">
+                  “Effective marketing is about understanding your audience,
+                  telling a compelling story, and creating connections that
+                  drive lasting impact.”
+                </p>
+                <div class="person">
+                  <img
+                    src="images/about/s3-person3.jpg"
+                    alt=""
+                    class="s3-image"
+                  />
+                  <div>
+                    <h3>Jeffrey Neddery</h3>
+                    <p>Marketing Director</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section 4 Photos -->
+      <section class="s4">
+        <div class="s4-content" data-aos="fade-down" data-aos-duration="600">
+          <h1>Photos</h1>
+          <p>
+            Explore the beauty of our hotel through stunning images that capture
+            the essence of relaxation and luxury. From scenic views to cozy
+            interiors, each photo tells the story of a perfect getaway, nestled
+            far from the everyday world by the peaceful shores of serenity.
+          </p>
+        </div>
+        <div class="slider" data-aos="fade-up" data-aos-duration="600">
+          <div class="list">
+            <div class="item">
+              <img src="images/home/s4-image1.jpg" alt="" />
+            </div>
+            <div class="item">
+              <img src="images/home/s3-image2.jpg" alt="" />
+            </div>
+            <div class="item">
+              <img src="images/home/s3-image3.jpg" alt="" />
+            </div>
+            <div class="item">
+              <img src="images/home/s3-image4.jpg" alt="" />
+            </div>
+            <div class="item">
+              <img src="images/home/s3-image5.jpg" alt="" />
+            </div>
+          </div>
+
+          <!-- button pre and next -->
+          <div class="buttons">
+            <button id="prev"><</button>
+            <button id="next">></button>
+          </div>
+
+          <!-- dots (if 5 items => 5 dots) -->
+          <ul class="dots">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+      </section>
+      <!-- Section 5 History -->
+      <section class="s5" data-aos="fade-down" data-aos-duration="600">
+        <h1>History</h1>
+        <div class="s5-container"  data-aos="zoom-in" data-aos-duration="600">
+          <ul>
+            <li>
+              <h3 class="title">More Branches Worldwide</h3>
+              <p>
+                Discover the expansive journey of our growth, reaching beyond
+                borders to establish branches worldwide. From humble beginnings,
+                our company has evolved and expanded, creating a global presence
+                while maintaining our core values.
+              </p>
+              <span class="circle"></span>
+              <span class="date">2019</span>
+            </li>
+            <li>
+              <h3 class="title">Company Full Blast</h3>
+              <p>
+                Experience the dynamic and innovative spirit that drives our
+                success. With a commitment to excellence, we have propelled our
+                company to new heights, blending tradition with cutting-edge
+                advancements to stay ahead in the industry.
+              </p>
+              <span class="circle"></span>
+              <span class="date">2011</span>
+            </li>
+            <li>
+              <h3 class="title">The Birth of the Company</h3>
+              <p>
+                Reflect on the origins of our company, where it all began. From
+                its inception, our mission has been to innovate and lead,
+                transforming ideas into reality and laying the foundation for a
+                legacy of success.
+              </p>
+              <span class="circle"></span>
+              <span class="date">2008</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Section 6 A Best Place To Stay. Reserve Now! -->
+      <section class="s6">
+        <div class="s6-image-bg">
+          <h2  data-aos="fade-right" data-aos-duration="600">A Best Place To Stay. Reserve Now!</h2>
+          <button  data-aos="fade-left" data-aos-duration="600"><a href="reservation.html">Reserve Now</a></button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section id="footerRender"></section>
+    </footer>
+    <script type="module" src="./js/index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+  </body>
+</html>
