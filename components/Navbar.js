@@ -1,135 +1,137 @@
 export const navbar = (activePage) => {
   return `
       <style>
-      .header{
-            padding: 20px 60px;
+        .header{
+            padding: 0 55px 0 35px;
             background-color: rgb(255, 255, 255);
             box-shadow: 3px 0 10px rgb(130, 123, 123);
             position: fixed;
-            width: 100vw;
             top: 0px;
-            z-index: 2;
-      }
-          nav {
-            
-              display: flex;
-              align-items: center;
-              justify-content: space-between;
-          }
-          .logo {
-              font-size: 28px;
-              font-weight: 700;
-              color: #fb923c;
-              text-decoration: none;
-              margin: 0;
-          }
-          ul {
-              display: flex;
-              align-items: center;
-              justify-content: space-between;
-              gap: 40px;
-              list-style: none;
-          }
-          nav ul a {
-              text-decoration: none;
-              color: rgba(11, 11, 11, 0.904);
-              font-size: 1.15rem;
-              font-weight: 500;
-              cursor: pointer;
-          }
-          nav ul a.active {
-              color: #f97316;
-              text-decoration: underline;
-          }
-          nav ul a:hover {
-              color: #fb923c;
-          }
-          .toggle-btn {
+            z-index: 20;
+            width: 100vw;
+            height: auto;
+        }
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        nav .lo{
+            width: 80px;
+            height: 80px;
+        }
+        nav .lo img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 60px;
+            list-style: none;
+        }
+        nav ul a {
+            text-decoration: none;
+            color: rgba(11, 11, 11, 0.904);
+            font-size: 1.15rem;
+            font-weight: 500;
+            cursor: pointer;
+        }
+        nav ul a.active {
+            color: #f97316;
+            text-decoration: underline;
+        }
+        nav ul a:hover {
+            color: #fb923c;
+        }
+        .toggle-btn {
             display: none;
             width: 40px; /* Fixed width */
             height: 40px; /* Fixed height */
             cursor: pointer;
-            }
+            place-content: center;
+            text-align: center;
+        }    
 
-            .burger {
-              width: 100%;
-              height: 100%;
-              object-fit: cover;
-              font-size: 1.8rem; /* Adjust icon size */
-              line-height: 1; /* Ensure vertical centering */
-           }
+        .burger {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            font-size: 1.8rem; /* Adjust icon size */
+            line-height: 1; /* Ensure vertical centering */
+         }
 
           
-          /* Drop Navbar Styles */
-          .drop-nav {
-            //   display: none;
-              height: 0;
-              overflow: hidden;
-              position: absolute;
-              right: 30px;
-              top: 80px;
-              width: 80%;
-              background: rgba(0, 0, 0, .1);
-              backdrop-filter: blur(5px);
-              border-radius: 10px;
-              transition: height 0.3s ease-in-out;
-              z-index: 10; /* Ensure dropdown is above other content */
-          }
-          .drop-nav.open {
-              height: 230px;
-          }
-          .drop-nav ul {
-              flex-direction: column;
-              gap: 15px;
-              padding-top: 20px;
-              padding-bottom: 20px;
-          }
-          .drop-nav ul a {
-              font-size: 20px;
-              color: #fff;
-              font-weight: 500;
-              text-decoration: none;
-          }
-          .drop-nav ul a.active {
-              color: #fb923c;
-          }
-          .drop-nav ul a:hover {
-              color: #fb923c;
-          }
+        /* Drop Navbar Styles */
+        .drop-nav {
+            height: 0;
+            overflow: hidden;
+            position: absolute;
+            right: 30px;
+            top: 80px;
+            width: 80%;
+            background: rgba(0, 0, 0, .1);
+            backdrop-filter: blur(5px);
+            border-radius: 0 0 10px 10px;
+            transition: height 0.3s ease-in-out;
+            z-index: 10; /* Ensure dropdown is above other content */
+        }
+        .drop-nav.open {
+            height: 230px;
+        }
+        .drop-nav ul {
+            flex-direction: column;
+            gap: 15px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        .drop-nav ul a {
+            font-size: 20px;
+            color: #fff;
+            font-weight: 500;
+            text-decoration: none;
+        }
+        .drop-nav ul a.active {
+            color: #fb923c;
+        }
+        .drop-nav ul a:hover {
+            color: #fb923c;
+        }
   
-          /* Responsive Design */
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+          .logo {
+            font-size: 24px;
+          }
+          ul {
+              gap: 25px;
+          }   
+        }
 
-          @media (max-width: 1024px) {
-            .logo {
+
+        @media (max-width: 768px) {
+          .logo {
               font-size: 24px;
-            }
-            ul {
-                gap: 25px;
-            }
-            
+          }  
+          nav ul {
+            display: none;
           }
-
-
-          @media (max-width: 768px) {
-            .logo {
-                font-size: 24px;
-            }  
-            nav ul {
-                  display: none;
-              }
-              .toggle-btn {
-                  display: block;
-              }
-              .drop-nav {
-                left: 2rem;
-                width: unset;
-              }
+          .toggle-btn {
+            display: block;
           }
+          .drop-nav {
+            left: 2rem;
+            width: unset;
+          }
+        }
       </style>
   
       <div class="header">
           <nav>
-              <a href="home.html" class="logo">Voco Hotel</a>
+              <a href="home.html"><div class="lo"><img src="./images/voco_hotel.png" alt=""></div>
+                </a>
               <ul>
                   <li><a href="rooms.html" class="${
                     activePage === "rooms" ? "active" : ""

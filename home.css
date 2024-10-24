@@ -22,6 +22,10 @@ body {
   width: 100%;
   height: auto;
 }
+
+main {
+  overflow: hidden;
+}
 /* Hero Section */
 .hero {
   background-image: url("images/home/hero-image.avif");
@@ -36,9 +40,7 @@ body {
   background-color: #00000070;
   height: 100%;
 }
-main {
-  overflow: hidden;
-}
+
 .hero-content {
   display: flex;
   flex-direction: column;
@@ -57,7 +59,7 @@ main {
 }
 .star {
   font-size: 14px;
-  color: white;
+  color: var(--primary-color-1);
   margin-right: 2px;
   margin-bottom: 1px;
 }
@@ -193,6 +195,7 @@ label {
 }
 .s2-image-wrapper {
   position: relative;
+  margin-right: 60px;
 }
 .s2-img1 {
   width: 600px;
@@ -237,14 +240,16 @@ label {
   margin: 0 0 20px 0;
 }
 .s3-card-container {
+  width: 100%;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 40px;
+  gap: 20px;
 }
 .s3-card {
   text-align: center;
-  width: 340px;
+  width: 300px;
   height: auto;
 }
 .s3-card h2 {
@@ -257,7 +262,7 @@ label {
   margin-bottom: 5px;
 }
 .s3-img {
-  width: 340px;
+  width: 300px;
   height: 230px;
 }
 
@@ -303,11 +308,16 @@ label {
   width: max-content;
   transition: 1s ease;
 }
-.item img {
+.item {
   width: 1100px;
   max-width: 1100px;
   height: 100%;
+  border-radius: 10px;
+}
+.item img {
   object-fit: cover;
+  width: 100%;
+  height: 100%;
   border-radius: 10px;
 }
 .buttons {
@@ -685,7 +695,7 @@ label {
 
 @media only screen and (max-width: 1024px) {
   .best {
-    font-size: 50px;
+    font-size: 55px;
   }
   .bg-form {
     height: 260px;
@@ -728,14 +738,17 @@ label {
   .learn-more {
     justify-content: center;
   }
+  .s2-image-wrapper {
+    margin-right: 0;
+  }
   .s2-img1 {
-    width: 600px;
-    height: 400px;
+    width: 100%;
+    height: auto;
     border-radius: 10px;
   }
   .s2-img2 {
     right: 50%;
-    left: 35%;
+    left: 40%;
   }
 
   .s3-content {
@@ -759,6 +772,9 @@ label {
   }
   .s4-content {
     padding: 60px 0 20px 0;
+  }
+  .s5-content {
+    padding: 0 60px 20px 60px;
   }
 
   .section-card::before {
@@ -809,6 +825,7 @@ label {
     flex-direction: column !important;
   }
   .bg-form {
+    width: 345px;
     height: 420px !important;
     transform: translate(0, -150px) !important;
   }
@@ -823,5 +840,102 @@ label {
   }
   .section-card:hover::before {
     width: 500% !important;
+  }
+  .s2-image-wrapper {
+    width: 100% !important;
+  }
+  .s2-img1 {
+    width: 100%;
+    object-fit: cover;
+  }
+  .s2-img2 {
+    width: 150px;
+    height: 150px;
+    right: 50%;
+    left: 40%;
+  }
+  .s3-img {
+    height: 300px;
+  }
+  .slider {
+    height: 350px;
+  }
+  .s7-card {
+    width: 100%;
+  }
+  .s7-card img {
+    height: 330px;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  .best {
+    font-size: 45px;
+  }
+  label {
+    font-size: 12px;
+  }
+  .s2 {
+    padding: 320px 30px 90px 30px;
+  }
+  .s2-content h1,
+  .s3-content h1,
+  .s4-content h1,
+  .s6 h1 {
+    font-size: 34px;
+  }
+  .s2-content p {
+    font-size: 12px;
+  }
+  .s2-img2 {
+    left: 30%;
+  }
+  .s3 {
+    padding: 60px 30px;
+  }
+
+  .s4 {
+    padding: 60px 30px 100px;
+  }
+  .s4-content {
+    padding: 0 0 20px 0;
+  }
+  .s5-content {
+    padding: 0 30px 20px;
+  }
+  .s5-content h1 {
+    font-size: 34px;
+    margin: 60px 0 20px 0;
+  }
+  .menu-wrapper {
+    flex-direction: column;
+  }
+  .menu-content {
+    text-align: center;
+  }
+  .s6 {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .section-card span {
+    font-size: 2rem;
+    top: -9px;
+    left: -3px;
+  }
+  .item img {
+    object-position: -191px -225px;
+  }
+  .s7 {
+    padding: 0 30px 100px;
+  }
+  .nav-tabs {
+    gap: 20px;
+    margin-left: 55px;
+    justify-content: unset;
+  }
+}
+@media (max-width: 320px) {
+  .nav-tabs {
+    margin-left: 29px;
   }
 }
