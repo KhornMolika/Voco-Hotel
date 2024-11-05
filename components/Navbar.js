@@ -69,9 +69,8 @@ export const navbar = (activePage) => {
             height: 0;
             overflow: hidden;
             position: absolute;
-            right: 30px;
+            right: 33px;
             top: 80px;
-            width: 80%;
             background: rgba(0, 0, 0, .1);
             backdrop-filter: blur(5px);
             border-radius: 0 0 10px 10px;
