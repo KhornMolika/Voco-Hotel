@@ -28,33 +28,31 @@ if (currentPath.includes("rooms")) {
 // });
 
 document.addEventListener("DOMContentLoaded", () => {
-    // Render the navbar and footer
-    navbarRender.innerHTML = navbar(activePage);
-    footerRender.innerHTML = footer();
-  
-    // Now that the elements are rendered, select the toggle button and dropdown
-    const toggleBtn = document.querySelector('.toggle-btn');
-    const toggleBtnIcon = document.querySelector('.toggle-btn .burger');
-    const dropDownMenu = document.querySelector('.drop-nav');
-  
-    // Add the click event listener for the toggle button
-    toggleBtn.onclick = function () {
-      dropDownMenu.classList.toggle('open');
-      const isOpen = dropDownMenu.classList.contains('open');
-  
-      // Change the icon depending on the menu state
-      toggleBtnIcon.innerHTML = isOpen ? '&times;' : '&#9776;';
-    };
+  // Render the navbar and footer
+  navbarRender.innerHTML = navbar(activePage);
+  footerRender.innerHTML = footer();
 
-    window.addEventListener('resize', function () {
-        if (window.innerWidth > 768) {
-          dropDownMenu.classList.remove('open');
-          toggleBtnIcon.innerHTML = '&#9776;'; // Reset icon to burger when closing the menu
-        }
-      });
+  // Now that the elements are rendered, select the toggle button and dropdown
+  const toggleBtn = document.querySelector(".toggle-btn");
+  const toggleBtnIcon = document.querySelector(".toggle-btn .burger");
+  const dropDownMenu = document.querySelector(".drop-nav");
+
+  // Add the click event listener for the toggle button
+  toggleBtn.onclick = function () {
+    dropDownMenu.classList.toggle("open");
+    const isOpen = dropDownMenu.classList.contains("open");
+
+    // Change the icon depending on the menu state
+    toggleBtnIcon.innerHTML = isOpen ? "&times;" : "&#9776;";
+  };
+
+  window.addEventListener("resize", function () {
+    if (window.innerWidth > 768) {
+      dropDownMenu.classList.remove("open");
+      toggleBtnIcon.innerHTML = "&#9776;"; // Reset icon to burger when closing the menu
+    }
   });
-  
-
+});
 
 // Slider
 
